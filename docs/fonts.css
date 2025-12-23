@@ -1,0 +1,39 @@
+/* DM Sans - Self-hosted fonts */
+/* Downloaded from: https://gwfh.mranftl.com/fonts/dm-sans */
+/* Only WOFF2 format for modern browser support */
+
+/* DM Sans Light 300 */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('fonts/dm-sans-v11-latin-300.woff2') format('woff2');
+}
+
+/* DM Sans Regular 400 */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/dm-sans-v11-latin-regular.woff2') format('woff2');
+}
+
+/* DM Sans Medium 500 */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/dm-sans-v11-latin-500.woff2') format('woff2');
+}
+
+/* DM Sans SemiBold 600 */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/dm-sans-v11-latin-600.woff2') format('woff2');
+}
