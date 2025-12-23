@@ -1,2 +1,3 @@
-# website
-Static HTML Page for under construction forewarding
+# Avor Medical Intelligence Website
+
+Currently hosting our website via GitHub Pages.

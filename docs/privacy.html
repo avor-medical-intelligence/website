@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – AVOR</title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-dark: #1a1a2e;
+            --blue-accent: #0095d9;
+            --text-dark: #1a1a2e;
+            --text-gray: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 4rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-link {
+            display: inline-block;
+        }
+
+        /* Language Switcher */
+        .lang-switch {
+            position: fixed;
+            top: 1.5rem;
+            right: 4rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 101;
+        }
+
+        .lang-switch a {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.35rem 0.6rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-switch a:hover {
+            color: var(--text-dark);
+            background: rgba(0, 0, 0, 0.04);
+        }
+
+        .lang-switch a.active {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .content h1 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.35rem;
+            font-weight: 500;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-gray);
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.7;
+        }
+
+        .content a {
+            color: var(--blue-accent);
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+            color: var(--blue-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: gap 0.2s ease;
+        }
+
+        .back-link:hover {
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 4rem;
+            background: #f5f7f9;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-logo {
+            height: 0.9rem;
+            width: auto;
+            opacity: 0.8;
+        }
+
+        .footer-tagline {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            flex: 1;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--blue-accent);
+        }
+
+        .footer-links a.active {
+            color: var(--blue-accent);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.25rem 1.5rem;
+            }
+
+            .lang-switch {
+                right: 1.5rem;
+                top: 1.25rem;
+            }
+
+            .content {
+                padding: 7rem 1.5rem 3rem;
+            }
+
+            footer {
+                padding: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-tagline {
+                order: 1;
+            }
+
+            .footer-links {
+                order: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index-en.html" class="logo-link">
+            <img src="logo.svg" alt="AVOR" class="logo">
+        </a>
+    </header>
+
+    <div class="lang-switch">
+        <a href="datenschutz.html">DE</a>
+        <a href="privacy.html" class="active">EN</a>
+    </div>
+
+    <main class="content">
+        <h1>Privacy Policy</h1>
+
+        <h2>1. Data Controller</h2>
+        <p>
+            The party responsible for data processing on this website is:<br>
+            Avor Medical Intelligence UG (haftungsbeschränkt)<br>
+            In der Lake 5b<br>
+            33739 Bielefeld<br>
+            Germany<br>
+            Email: info@avor.med
+        </p>
+
+        <h2>2. General Information on Data Processing</h2>
+        <p>
+            The protection of your personal data is of particular concern to us. We therefore process your data exclusively on the basis of statutory provisions (GDPR, BDSG, DDG). In this privacy policy, we inform you about the most important aspects of data processing on our website.
+        </p>
+        <p>
+            This website is purely an informational page about our company. No sale of goods or services takes place through this website.
+        </p>
+
+        <h2>3. Hosting</h2>
+        <p>
+            Our website is hosted by GitHub Pages, a service provided by GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA (a Microsoft Corporation company).
+        </p>
+        <p>
+            When you access our website, information is automatically collected by the hosting provider and stored in so-called server log files. This information includes:
+        </p>
+        <ul>
+            <li>IP address of the requesting computer</li>
+            <li>Date and time of access</li>
+            <li>Name and URL of the retrieved file</li>
+            <li>Website from which access was made (referrer URL)</li>
+            <li>Browser used and, if applicable, your computer's operating system</li>
+        </ul>
+        <p>
+            This data is processed on the basis of Art. 6 para. 1 lit. f GDPR. Our legitimate interest lies in the technically error-free presentation and optimization of our website.
+        </p>
+        <p>
+            GitHub Inc. is certified under the EU-US Data Privacy Framework, which ensures an adequate level of data protection. For more information, please refer to GitHub's privacy policy: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a>
+        </p>
+
+        <h2>4. Contact Form</h2>
+        <p>
+            We provide a contact form on our website through which you can send us inquiries. The contact form is provided by Tally, operated by Tally NV, Hendrik Consciencestraat 12, 2800 Mechelen, Belgium.
+        </p>
+        <p>
+            When you contact us via the contact form, the following data is collected:
+        </p>
+        <ul>
+            <li>Name</li>
+            <li>Email address</li>
+            <li>Phone number (if provided)</li>
+            <li>Your message</li>
+        </ul>
+        <p>
+            This data is processed on the basis of Art. 6 para. 1 lit. b GDPR to process your inquiry, or on the basis of Art. 6 para. 1 lit. f GDPR due to our legitimate interest in communicating with interested parties.
+        </p>
+        <p>
+            Tally processes data on servers within the European Union. For more information, please refer to Tally's privacy policy: <a href="https://tally.so/help/privacy-policy" target="_blank" rel="noopener">https://tally.so/help/privacy-policy</a>
+        </p>
+        <p>
+            Your data submitted via the contact form will be stored by us until your inquiry has been fully processed or until we are obligated to continue storage due to legal retention requirements. The data will then be deleted unless further statutory retention obligations apply.
+        </p>
+
+        <h2>5. Email Communication</h2>
+        <p>
+            When we respond to your inquiry by email, we use our email service operated through our domain provider Variomedia AG, Kronprinzendamm 21, 10711 Berlin, Germany.
+        </p>
+        <p>
+            Variomedia processes data exclusively on servers in Germany. Processing is carried out on the basis of Art. 6 para. 1 lit. b GDPR for the implementation of pre-contractual measures, or on the basis of Art. 6 para. 1 lit. f GDPR due to our legitimate interest in responding to inquiries.
+        </p>
+
+        <h2>6. Cookies</h2>
+        <p>
+            Our website does not use cookies. Neither technically necessary nor analytical or marketing cookies are used.
+        </p>
+
+        <h2>7. No Web Analytics</h2>
+        <p>
+            We do not use web analytics tools (such as Google Analytics) and do not create user profiles.
+        </p>
+
+        <h2>8. Use of Content for AI Training</h2>
+        <p>
+            The content of this website may not be used for training artificial intelligence (AI), machine learning models, or similar technologies. This includes, but is not limited to, large language models (LLMs), generative AI systems, and automated data collection systems for the purpose of model training.
+        </p>
+        <p>
+            Automated crawling of the website for indexing purposes by search engines is permitted.
+        </p>
+
+        <h2>9. Your Rights</h2>
+        <p>
+            You have the following rights with regard to your data stored by us:
+        </p>
+        <ul>
+            <li><strong>Right of access:</strong> You may request information about your personal data processed by us (Art. 15 GDPR).</li>
+            <li><strong>Right to rectification:</strong> You may request the correction of inaccurate data (Art. 16 GDPR).</li>
+            <li><strong>Right to erasure:</strong> You may request the deletion of your data, provided no legal retention obligations apply (Art. 17 GDPR).</li>
+            <li><strong>Right to restriction of processing:</strong> You may request the restriction of processing of your data (Art. 18 GDPR).</li>
+            <li><strong>Right to data portability:</strong> You may request to receive your data in a structured, commonly used, and machine-readable format (Art. 20 GDPR).</li>
+            <li><strong>Right to object:</strong> You may object to the processing of your data if it is based on legitimate interests (Art. 21 GDPR).</li>
+        </ul>
+        <p>
+            To exercise your rights, please contact us by email.
+        </p>
+
+        <h2>10. Right to Lodge a Complaint</h2>
+        <p>
+            You have the right to lodge a complaint with a data protection supervisory authority regarding the processing of your personal data (Art. 77 GDPR). The competent authority for us is the State Commissioner for Data Protection and Freedom of Information North Rhine-Westphalia (Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen).
+        </p>
+
+        <h2>11. Updates to This Privacy Policy</h2>
+        <p>
+            This privacy policy is currently valid as of December 2024. Due to the further development of our website or changes in legal or regulatory requirements, it may become necessary to update this privacy policy. The current version can always be accessed on this website.
+        </p>
+
+        <a href="index-en.html" class="back-link">
+            ← Back to Home
+        </a>
+    </main>
+
+    <footer>
+        <a href="index-en.html">
+            <img src="logo.svg" alt="AVOR" class="footer-logo">
+        </a>
+        <span class="footer-tagline">AI-Powered Therapy Decisions for Hematology and Oncology</span>
+        <div class="footer-links">
+            <a href="privacy.html" class="active">Privacy Policy</a>
+            <a href="imprint.html">Legal Notice</a>
+        </div>
+    </footer>
+</body>
+</html>

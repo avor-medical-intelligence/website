@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Notice (Impressum) – AVOR</title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-dark: #1a1a2e;
+            --blue-accent: #0095d9;
+            --text-dark: #1a1a2e;
+            --text-gray: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 4rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-link {
+            display: inline-block;
+        }
+
+        /* Language Switcher */
+        .lang-switch {
+            position: fixed;
+            top: 1.5rem;
+            right: 4rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 101;
+        }
+
+        .lang-switch a {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.35rem 0.6rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-switch a:hover {
+            color: var(--text-dark);
+            background: rgba(0, 0, 0, 0.04);
+        }
+
+        .lang-switch a.active {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .content h1 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .content h2 {
+            font-size: 1.35rem;
+            font-weight: 500;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .content a {
+            color: var(--blue-accent);
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+            color: var(--blue-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: gap 0.2s ease;
+        }
+
+        .back-link:hover {
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 4rem;
+            background: #f5f7f9;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-logo {
+            height: 0.9rem;
+            width: auto;
+            opacity: 0.8;
+        }
+
+        .footer-tagline {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            flex: 1;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--blue-accent);
+        }
+
+        .footer-links a.active {
+            color: var(--blue-accent);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.25rem 1.5rem;
+            }
+
+            .lang-switch {
+                right: 1.5rem;
+                top: 1.25rem;
+            }
+
+            .content {
+                padding: 7rem 1.5rem 3rem;
+            }
+
+            footer {
+                padding: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-tagline {
+                order: 1;
+            }
+
+            .footer-links {
+                order: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index-en.html" class="logo-link">
+            <img src="logo.svg" alt="AVOR" class="logo">
+        </a>
+    </header>
+
+    <div class="lang-switch">
+        <a href="impressum.html">DE</a>
+        <a href="imprint.html" class="active">EN</a>
+    </div>
+
+    <main class="content">
+        <h1>Legal Notice (Impressum)</h1>
+
+        <h2>Information pursuant to § 5 DDG</h2>
+        <p>
+            Avor Medical Intelligence UG (haftungsbeschränkt)<br>
+            In der Lake 5b<br>
+            33739 Bielefeld<br>
+            Germany
+        </p>
+
+        <h2>Represented by</h2>
+        <p>
+            Managing Director: Friedrich Schwarz
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            Email: info@avor.med
+        </p>
+
+        <h2>Commercial Register</h2>
+        <p>
+            Registered in the Commercial Register<br>
+            Register Court: Amtsgericht (Local Court) Bielefeld<br>
+            Register Number: HRB 46497
+        </p>
+
+        <h2>Responsible for content pursuant to § 18 para. 2 MStV</h2>
+        <p>
+            Friedrich Schwarz<br>
+            In der Lake 5b<br>
+            33739 Bielefeld
+        </p>
+
+        <h2>EU Dispute Resolution</h2>
+        <p>
+            The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a><br>
+            Our email address can be found above in this legal notice.
+        </p>
+
+        <h2>Consumer Dispute Resolution</h2>
+        <p>
+            We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+        </p>
+
+        <h2>Liability for Content</h2>
+        <p>
+            The contents of our pages have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with general laws pursuant to § 7 para. 1 DDG (German Digital Services Act). According to §§ 8 to 10 DDG, however, we are not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the point in time at which we become aware of a specific legal violation. Upon becoming aware of such legal violations, we will remove this content immediately.
+        </p>
+
+        <h2>Liability for Links</h2>
+        <p>
+            Our website contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for this third-party content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, permanent monitoring of the content of linked pages is not reasonable without concrete evidence of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately.
+        </p>
+
+        <h2>Copyright</h2>
+        <p>
+            The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.
+        </p>
+        <p>
+            The use of the content of this website for training artificial intelligence (AI), machine learning models, or similar technologies is expressly prohibited.
+        </p>
+
+        <a href="index-en.html" class="back-link">
+            ← Back to Home
+        </a>
+    </main>
+
+    <footer>
+        <a href="index-en.html">
+            <img src="logo.svg" alt="AVOR" class="footer-logo">
+        </a>
+        <span class="footer-tagline">AI-Powered Therapy Decisions for Hematology and Oncology</span>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="imprint.html" class="active">Legal Notice</a>
+        </div>
+    </footer>
+</body>
+</html>

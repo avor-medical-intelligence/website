@@ -1,21 +1,53 @@
-# Block everything by default
+# robots.txt for avor.med
+# Allow search engine indexing, disallow AI training crawlers
+
+# Allow all standard search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Disallow AI training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# Default rule: allow everything else
 User-agent: *
-Disallow: /
-
-# Explicitly block common AI/data crawlers
-User-agent: GPTBot           # OpenAI
-Disallow: /
-
-User-agent: ChatGPT-User     # OpenAI web preview bot
-Disallow: /
-
-User-agent: Google-Extended  # Google AI training/grounding
-Disallow: /
-
-User-agent: CCBot            # Common Crawl
-Disallow: /
-
-User-agent: ClaudeBot        # Anthropic
-Disallow: /
-User-agent: anthropic-ai     # Anthropic alt UA (see their docs)
 Disallow: /
