@@ -195,11 +195,36 @@
         .footer-copyright {
             width: 100%;
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 0.5rem; /* Reduced from 2rem */
             padding-top: 1rem;
             font-size: 0.85rem;
             color: var(--text-light);
-            border-top: 1px solid rgba(0, 0, 0, 0.06); /* Optional subtle separator line */
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .footer-center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem; /* Space between tagline and email */
+            text-align: center;
+        }
+
+        
+        .footer-email {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; /* Space between icon and text */
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-email:hover {
+            color: var(--blue-accent);
         }
 
         .footer-links a.active {
@@ -227,7 +252,7 @@
                 text-align: center;
             }
 
-            .footer-tagline {
+            .footer-center {
                 order: 1;
             }
 
