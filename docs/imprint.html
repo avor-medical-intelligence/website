@@ -181,27 +181,11 @@
             color: var(--blue-accent);
         }
 
-        
-
-.footer-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.footer-copyright {
-    width: auto;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 0.85rem;
-    color: var(--text-light);
-    border-top: none;
-}
+        .footer-copyright {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
 
         .footer-center {
             flex: 1;
@@ -348,14 +332,23 @@
         <a href="index-en.html">
             <img src="assets/logo.svg" alt="AVOR" class="footer-logo">
         </a>
-        <span class="footer-tagline">AI-Powered Therapy Decisions for Hematology and Oncology</span>
+                <div class="footer-center">
+            <span class="footer-tagline">AI-Powered Therapy Decisions for Hematology and Oncology</span>
+            <a href="mailto:info@avor.med" class="footer-email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                            info@avor.med
+                        </a>
+            <div class="footer-copyright">
+                        &copy; 2025-2026 Avor Medical Intelligence UG (haftungsbeschränkt)
+                    </div>
+        </div>
         <div class="footer-links">
             <a href="privacy.html">Privacy Policy</a>
             <a href="imprint.html" class="active">Legal Notice</a>
         </div>
-        <div class="footer-copyright">
-            &copy; 2025-2026 Avor Medical Intelligence UG (haftungsbeschränkt)
-        </div>
+        
     </footer>
 </body>
 </html>
